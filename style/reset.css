@@ -1,0 +1,56 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,tr,td,img,div,dl,dt,dd,input,textarea,a,span{margin:0;padding:0;}
+body{color: #333;}
+html{-webkit-text-size-adjust:100%;}/*在css中关掉字体缩放*/
+body{font-size:10px;}
+img,a{border:none;}
+a:hover{color:cornflowerblue} /*a标签hover为蓝色*/
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+ul,li{list-style:none;}
+i,em{ font-style:normal;}
+*{-webkit-tap-highlight-color:rgba(255,0,0,0);}/* 1.去除android 标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+button,input,select {-webkit-appearance:none; /*去除input默认样式*/}
+
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*select*/
+.radios,.checkboxs{
+    width: 100%;
+    height: 500px;
+    border:1px solid #999;
+}
+.checkbox,.radio{
+    width: 49%;
+    margin-left: 0.8%;
+    height: 400px;
+    float: left;
+    border:1px solid #999;
+}
+.selected{
+    border:1px solid red;
+}
+
+/* comWidth*/
+.comWidth{width:1000px; margin-left:auto; margin-right:auto;}
+.leftArea{float:left;}
+.rightArea{float:right;}
+*{ font-family:"Microsoft YaHei", "微软雅黑";}
+
+/*@media screen and (max-width: 375px){*/
+    /*html{*/
+        /*font-size: 50px;*/
+    /*}*/
+/*}*/
+/*@media screen and (min-width: 375px){*/
+    /*html{*/
+        /*font-size: 59px;*/
+    /*}*/
+/*}*/

@@ -1,0 +1,34 @@
+//混合模式，圆角
+.border-radius(@radius:5px){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;;
+}
+//匹配模式  有点像js的if,三角
+.triangle(top,@w:10px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent transparent @c transparent;
+  border-style: dashed dashed solid dashed;
+}
+.triangle(right,@w:10px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent transparent transparent @c;
+  border-style: dashed dashed dashed solid;
+}
+.triangle(bottom,@w:10px,@c:#ccc){
+  border-width: @w;
+  border-color: @c transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+}
+.triangle(left,@w:10px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent @c transparent transparent;
+  border-style: dashed solid dashed dashed;
+}
+.triangle(@_,@w:10px,@c:#ccc){
+  width: 0;
+  height:0;
+  overflow: hidden;
+}
+
+//********************************
